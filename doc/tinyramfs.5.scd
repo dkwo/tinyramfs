@@ -119,6 +119,32 @@ zfs_root
 
 	The device your ZFS volume is located on.
 
+## UCODE
+
+ucode_image
+
+	Path to a pre-built microcode image (optional, will be
+	generated if not specified).
+
+## UKI
+
+uki_cmdline
+
+	Kernel command line to include in the image.
+
+uki_efistub
+
+	Path to an EFI Stub loader.
+
+uki_kernel
+
+	Path to the kernel. $kernel holds the kernel version passed to tinyramfs.
+
+uki_only
+
+	(bool) Whether or not to remove the initramfs image after
+	using it to generate the UKI.
+
 # FILES
 
 /lib/tinyramfs/hook.d/
